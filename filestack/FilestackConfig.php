@@ -11,9 +11,9 @@ class FilestackConfig
     const CDN_URL = 'https://cdn.filestackcontent.com';
     const UPLOAD_URL = 'https://upload.filestackapi.com';
 
-    const UPLOAD_PART_SIZE = 1024 * 1024 * 8; // last_digit=MB
-    const UPLOAD_CHUNK_SIZE = 1024 * 1024 * 1; // last_digit=MB
-    const UPLOAD_MIN_CHUNK_SIZE = 1024 * 32; // last_digit=KB
+    const UPLOAD_PART_SIZE = 8388608; // 1024 * 1024 * 8; // last_digit=MB
+    const UPLOAD_CHUNK_SIZE = 1048576; // 1024 * 1024 * 1; // last_digit=MB
+    const UPLOAD_MIN_CHUNK_SIZE = 32768; // 1024 * 32; // last_digit=KB
 
     const UPLOAD_WAIT_ATTEMPTS = 300;
     const UPLOAD_WAIT_SECONDS = 2;
